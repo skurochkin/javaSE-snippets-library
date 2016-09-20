@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 /**
  * Created by VKurochkin on 9/20/2016.
+ * source: http://www.coderslexicon.com/train-bus-reservation-example-in-java/
  */
 public class TicketReservationTrain {
     // Create an array of 12 seats, 6 window and 6 aisle.
