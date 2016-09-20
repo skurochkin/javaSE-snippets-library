@@ -37,6 +37,6 @@ public class Lottery {
         || guessDigit2 == lotteryDigit2)
             System.out.println("Match one digit: you win $1,000");
         else
-            System.out.println("Sorry, no match");
+            System.out.println("Sorry, no match!");
     }
 }
