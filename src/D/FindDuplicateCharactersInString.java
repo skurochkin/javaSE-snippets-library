@@ -6,7 +6,7 @@ package D;
 import java.util.HashMap;
 import java.util.Set;
 
-class DuplicateCharactersInString
+class FindDuplicateCharactersInString
 {
     static void duplicateCharCount(String inputString)
     {
