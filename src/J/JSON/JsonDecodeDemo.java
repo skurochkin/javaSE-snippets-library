@@ -1,8 +1,8 @@
 package J.JSON;
 
-import org.json.simple.JSONObject;
+
 import org.json.simple.JSONArray;
-import org.json.simple.parser.ParseException;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 /**
@@ -10,12 +10,11 @@ import org.json.simple.parser.JSONParser;
  */
 public class JsonDecodeDemo {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws org.json.simple.parser.ParseException {
 
     JSONParser parser = new JSONParser();
     String s = "[0,{\"1\":{\"2\":{\"3\":{\"4\":[5,{\"6\":7}]}}}}]";
 
-    try{
         Object obj = parser.parse(s);
         JSONArray array = (JSONArray)obj;
 
@@ -38,10 +37,5 @@ public class JsonDecodeDemo {
         s = "[5,,2]";
         obj = parser.parse(s);
         System.out.println(obj);
-    }catch(ParseException pe){
-
-        System.out.println("position: " + pe.getPosition());
-        System.out.println(pe);
     }
-}
 }
