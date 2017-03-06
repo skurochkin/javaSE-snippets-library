@@ -6,5 +6,5 @@ package D.MasteringOODesign.Zoo;
 public interface Flyable {
 
     // abstract methods
-    public void fly();
+    void fly();
 }
